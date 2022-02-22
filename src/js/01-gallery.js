@@ -10,6 +10,7 @@ const imagesAdd = document.querySelector(".gallery");
 
 
 
+
 let makeString = '';
 
 galleryItems.forEach(({ preview, original, description }) => {
@@ -32,18 +33,14 @@ function getClick(event) {
     if (event.target.nodeName !== "IMG") {
         return;
     }
-
-    const instance = basicLightbox.create(`
-        <img src="${event.target.dataset.source}">
-    `)
-
-    instance.show();
 }
 
-new SimpleLightbox('.gallery a', {
+  new SimpleLightbox('.gallery a', {
     captions: true,
     captionsData: 'alt',
     captionDelay: 250,
 });
+
+
 
 console.log(galleryItems);
