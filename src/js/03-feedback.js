@@ -35,7 +35,7 @@ function onStorageData() {
         returnDataInput(savedDataParse);
   }
 }
-console.log(onStorageData)
+
 
 function returnDataInput(data) {
   formData.email = data.email;
@@ -43,4 +43,3 @@ function returnDataInput(data) {
   checkForm.form.elements.email.value = formData.email;
   checkForm.form.elements.message.value = formData.message;
 }
-console.log(returnDataInput)
