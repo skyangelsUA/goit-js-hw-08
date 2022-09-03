@@ -19,11 +19,12 @@ function onInput(event) {
 console.log(onInput)
 
 function onFormSubmit(event) {
-  if (formData) 
+  if (formData) {
     console.log(formData);
     event.preventDefault();
-    localStorage.removeItem(LOCAL_STORAGE_KEY);
+    localStorage.clear("email", "message");
     event.currentTarget.reset();
+  }
 };
 
 
