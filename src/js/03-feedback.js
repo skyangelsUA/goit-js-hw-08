@@ -23,12 +23,12 @@ console.log(onInput)
 
 
 function onFormSubmit(event) {
-  
+   
     event.preventDefault();
     event.currentTarget.reset();
     localStorage.removeItem(LOCAL_STORAGE_KEY);
-    console.log(formData);
-  
+    
+    console.log(formData)
 };
 
 
