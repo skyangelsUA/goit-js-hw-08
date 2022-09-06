@@ -31,9 +31,9 @@ function onFormSubmit(event) {
    
     event.preventDefault();
     event.currentTarget.reset();
-    console.log(localStorage.getItem(LOCAL_STORAGE_KEY));
+    const parseLocalStorage = JSON.parse(localStorage.getItem(LOCAL_STORAGE_KEY))
     localStorage.removeItem(LOCAL_STORAGE_KEY);
-    
+     console.log(parseLocalStorage);
     
 };
 
