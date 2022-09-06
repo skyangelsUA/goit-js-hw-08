@@ -33,7 +33,7 @@ function onFormSubmit(event) {
     event.currentTarget.reset();
     const parseLocalStorage = JSON.parse(localStorage.getItem(LOCAL_STORAGE_KEY))
     localStorage.removeItem(LOCAL_STORAGE_KEY);
-     console.log(parseLocalStorage);
+    console.log(parseLocalStorage);
     
 };
 
@@ -50,5 +50,5 @@ function localStorageSave() {
     email.value = storageSave.email;
     message.value = storageSave.message;
   }
-console.log(storageSave)
+// console.log(storageSave)
 }
