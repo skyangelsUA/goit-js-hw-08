@@ -19,7 +19,8 @@ function onInput() {
   };
   localStorage.setItem(LOCAL_STORAGE_KEY, JSON.stringify(formData));
   
-  console.log(formData)
+  // const parceFormData = JSON.parse(JSON.stringify(formData));
+  // console.log(parceFormData);
   
 };
 
@@ -49,5 +50,5 @@ function localStorageSave() {
     email.value = storageSave.email;
     message.value = storageSave.message;
   }
-
+console.log(storageSave)
 }
